@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!--google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,21 +22,40 @@
         <!--page corp-->
         <main>
             <!--left side bar-->
-            <aside>
-                <div class="row">
-                    <h1> img Logo</h1>
+            <aside id="mobile-nav" class="mobile-viewport">
+                <div class="aside-top">
+                
                     <nav>
                         <ul>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
+                            <li><a href="#"><img src="img/logo-small.svg" alt="mobile logo"></a></li>
+                            <li><a href="#"><img src="img/home.svg" alt="home icon"></a></li>
+                            <li><a href="#"><img src="img/search.svg" alt="search icon"></a></li>
+                            <li><a href="#"><img src="img/libreria.svg" alt="library icon"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                    <div class="aside-bottom">
+                    <a href="#"><img src="img/download.svg" alt="download icon"></a>
+                    <a href="#"><img src="img/profile.svg" alt="user profile"></a>
+                </div>
+
+
+
+            </aside>
+            <aside class="full-viewport">
+                <div class="row-logo">
+                    <img src="img/logo.svg" alt="spotify logo">
+                    <nav>
+                        <ul>
+                            <li><img src="img/home.svg" alt="home icon"><a href="#">Link</a></li>
+                            <li><img src="img/search.svg" alt="search icon"><a href="#">Link</a></li>
+                            <li><img src="img/libreria.svg" alt="library icon"><a href="#">Link</a></li>
                         </ul>
                     </nav>
                 </div>
                 <h2>playlist</h2>
-                <button>crea playlist</button>
+                <a href="#"><i class="fa-solid fa-plus"></i>crea playlist</a>
                 <div class="row big">
-                    <div class="nav-aside">
                     <nav>
                         <ul>
                             <li><a href="#">Nome playlist</a></li>
@@ -45,11 +66,11 @@
                             <li><a href="#">Nome playlist</a></li>
                         </ul>
                     </nav>
-                    </div>
-                </div>
-                <div class="row">
-                    <div>Installa</div>
-                    <div>Nome user + icona</div>
+                </div>                
+                <div class="row-user">
+                    <img src="img/download.svg" alt="download icon"><a href="#">Installa app</a>
+                    <hr>
+                    <a href="#"><img src="img/profile.svg" alt="user profile">John Doe</a>
                 </div>
             </aside>
             <!--/left side bar-->
