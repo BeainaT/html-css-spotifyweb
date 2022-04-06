@@ -8,3 +8,39 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+/*--HEADER--*/
+header {
+    height: 80px;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    left: 300px;
+    z-index: 9;
+}
+/*--MAIN--*/
+main {
+    display: flex;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: calc(100vh - 80px);
+    background-color: blueviolet;
+
+}
+.row.big {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+section {
+    width: calc(100% - 300px);
+    height: calc(100vh - 80px);
+    background-color: cadetblue;
+    overflow-y: auto;
+}
+/*--FOOTER--*/
+footer {
+    height: 80px;
+    background-color: gray;
+}
