@@ -68,7 +68,7 @@ aside.mobile-viewport {
     width: 50px;
     background-color: #000;
     justify-content: space-between;
-    /* display: none; */
+    display: none;
 }
 .aside-top img {
     width: 80%;
@@ -90,7 +90,7 @@ aside.full-viewport {
 .row-logo nav ul li:active {
     border-left: 3px solid #adff2f;
 }
-h2 {
+.full-viewport h2 {
     font-size: inherit;
     text-transform: uppercase;
     padding: 10px 0 0 10px;
@@ -133,11 +133,49 @@ i.fa-plus, .row-user img, .row-logo img {
     border-radius: 100%;
 }
 /*right main*/
-section {
+.right-main-section {
     width: calc(100% - 200px);
     height: calc(100vh - 80px);
     background-color: #141922;
     overflow-y: auto;
+}
+.main-nav {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.main-nav nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 5px;
+    font-size: 13px;
+}
+.main-nav nav ul li:first-child::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #adff2f;
+    display: block;
+    margin: auto;
+}
+section {
+    color: #fff;
+    padding: 20px;
+}
+.album-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.album-img {
+    width: calc(100% / 6 - 10px);
+    margin: 10px 0;
+}
+.album-img img {
+    width: 100%;
+}
+.album-title {
+    text-align: center;
 }
 /*--FOOTER--*/
 footer {
