@@ -8,7 +8,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
 }
 /*--COMMONS--*/
 a {
@@ -23,6 +23,9 @@ nav ul li {
 }
 .mobile-viewport li a img, .full-viewport li a img {
     color: #a3a3a3;
+}
+.layover > i {
+    font-size: 4em;
 }
 /*--HEADER--*/
 header {
@@ -159,23 +162,46 @@ i.fa-plus, .row-user img, .row-logo img {
     margin: auto;
 }
 section {
+    width: 100%;
     color: #fff;
     padding: 20px;
 }
-.album-row {
+.row {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 0;
     gap: 10px;
 }
-.album-img {
-    width: calc(100% / 6 - 10px);
-    margin: 10px 0;
-}
-.album-img img {
-    width: 100%;
+.col {
+    width: calc(100% / 6 - 20px);
+    display: flex;
+    flex-flow: column wrap;
 }
 .album-title {
     text-align: center;
+}
+.album-title h3 {
+    margin: 10px;
+}
+.album-img, .album-img img {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.layover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.album-img:hover .layover {
+    display: flex;
 }
 /*--FOOTER--*/
 footer {
