@@ -332,3 +332,13 @@ footer small, .footer-left i, .footer-playing span {
         width: calc(100% / 2 - 10px);
     }
 }
+/* 601px - 700px */
+@media screen and (max-width: 700px) {
+    .col {
+        width: calc(100% / 2 - 10px);
+    }
+    .icon-playing {
+        padding-left: 20px;
+    }
+    
+}
