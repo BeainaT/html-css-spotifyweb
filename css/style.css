@@ -13,6 +13,10 @@ body {
 .layover > i {
     font-size: 4em;
 }
+.play-bar i {
+    font-size: 1.5em;
+    padding: 0 10px;
+}
 /*--COMMONS--*/
 a {
     text-decoration: none;
@@ -212,5 +216,62 @@ section {
 /*--FOOTER--*/
 footer {
     height: 80px;
-    background-color: gray;
+    background-color: #282828;
+    color: #fff;
+}
+footer, footer > *, .play-load {
+    display: flex;
+    align-items: center;
+}
+.footer-left, .footer-right, .footer-playing {
+    width: 20%;
+    justify-content: space-evenly;
+}
+.icon-playing {
+    text-align: end;
+}
+.icon-playing i {
+    padding: 0 5px;
+}
+.footer-left > * {
+    width: calc(100% / 3);
+}
+.footer-left img {
+    width: 60px;
+    padding: 10px;
+}
+.footer-playing {
+    flex-direction: column;
+    width: 60%;
+}
+footer small, .footer-left i, .footer-playing span {
+    color: #5a5a5a;
+}
+.footer-playing small{
+    color: inherit;
+}
+.load-run {
+    width: 400px;
+    height: 3px;
+    border-radius: 5px;
+    margin: 10px 20px;
+    background-color: #5a5a5a;
+}
+.runner {
+    width: 20%;
+    height: inherit;
+    border-radius: inherit;
+    background-color: #c1c1c1;
+}
+.play-bar {
+    display: flex;
+    align-items: center;
+}
+.play-bar i:nth-child(3) {
+    font-size: 2.5em;
+    padding: 0 20px;
+}
+.footer-right .load-run {
+    width: 40%;
+    margin: 0;
 }
